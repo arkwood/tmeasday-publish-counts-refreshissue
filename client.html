@@ -1,0 +1,11 @@
+<body>
+  {{> test}}
+</body>
+
+<template name="test">
+  <h2>Total entries: {{total}}</h2>
+  {{#each filteredEntries}}
+    <li>Entry: {{a}}</li>
+  {{/each}}
+  <a href="#" id="filter-c">Change to filter C</a><br/>
+</template>
